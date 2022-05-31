@@ -1,8 +1,7 @@
 x=int(input())
-for i in range(x):
-    for j in range(x):
-        if i==j or i==x-j-1:
-            print("x",end="")
-        else:
-            print("0",end="")
+asciichr=65
+for i in range(x,0,-1):
+    for j in range(i):
+        print(chr(asciichr+x-1),end=' ')
+    asciichr-=1
     print()
