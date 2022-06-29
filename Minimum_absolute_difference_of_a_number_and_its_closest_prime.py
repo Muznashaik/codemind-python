@@ -23,3 +23,4 @@ if s>=t:
     print(t)
 else:
     print(s)
+    
