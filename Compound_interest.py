@@ -1,3 +1,3 @@
-x,y,z=map(int,input().split())
-ci=x*pow((1+y/100),z)
-print("{:.2f}".format(ci))
+p,r,t=map(int,input().split())
+k=p*(pow(1+(r/100),t))
+print("{:.2f}".format(k))
