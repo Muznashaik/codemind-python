@@ -1,12 +1,13 @@
+def prime(i):
+    for i in range(2,int(j**0.5+1)):
+        if j%i==0:
+            return 1
+    else:
+        return 0
 x=int(input())
-c=0
 k=0
-for i in range(1,x+1):
-    c=0
-    if x%i==0:
-        for j in range(1,i+1):
-            if i%j==0:
-                c+=1
-        if(c!=2):
+for j in range(1,x+1):
+    if x%j==0:
+        if prime(j):
             k+=1
-print(k)
+print(k+1)
