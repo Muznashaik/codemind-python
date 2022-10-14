@@ -1,17 +1,24 @@
-x=int(input())
-a=0
-b=1
-for i in range(x):
-    c=a+b
-    a=b
-    b=c
-    if c>x:
-        if(abs(x-c)==abs(x-a)):
-            print(a,c)
-            break
-        elif(abs(x-c)>abs(x-a)):
-            print(a)
-            break
-        else:
-            print(c)
-            break
+a=int(input())
+arr=[]
+fa=0
+fb=1
+fn=fa+fb
+for i in range(100):
+    arr.append(fa)
+    fn=fa+fb
+    fa=fb
+    fb=fn
+f=l=df=fl=0
+for i in range(100):
+    if arr[i]>a:
+        l=arr[i]
+        f=arr[i-1]
+        dl=l-a
+        df=a-f
+        if df==dl:
+            print(f,l)
+        elif df>dl:
+            print(l)
+        elif df<dl:
+            print(f)
+        break
